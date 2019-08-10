@@ -2,7 +2,7 @@
 layout: post
 title: "Build<strong> your UI Librarie🚀🚀🚀
 </strong>"
-subtitle: "Designing for every screen"
+subtitle: "Components are great"
 section: css
 ---
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/ewxMpl09OwE' frameborder='0' allowfullscreen></iframe></div>
@@ -135,9 +135,11 @@ You can also make a flex item grow and take all available space:
 
 # Exercises
 
+* Build [your own library](https://codedot.tk/UIkit)
+
 * Design the Facebook Like button
 
-*  Build an Epicurious’ card
+*  Build an [Epicurious’ card](https://www.epicurious.com/search/chocolate%20cake)
 
 * Use flexboxes to design your own breaking news feed
 
@@ -148,6 +150,7 @@ You can also make a flex item grow and take all available space:
 * UX components on codepen.io
 
 *  Flexbox guide
+
 * Flexbox Froggy game
 
 
