@@ -84,7 +84,9 @@ For example, consider this dark filter:
 
 ```html
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('/path/to/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%),
+  url('/path/to/background.jpg');
+
   background-size: cover;
   color: white;
 }
