@@ -1,6 +1,6 @@
 ---
 layout: post
-title: " Let's build<strong> a Landing Page🚀🚀🚀
+title: "🚀Let's build<strong> a Landing Page
 </strong>"
 subtitle: "Designing for every screen"
 section: css

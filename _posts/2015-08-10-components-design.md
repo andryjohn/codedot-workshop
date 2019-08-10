@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Build<strong> your UI Librarie🚀🚀🚀
+title: "🇫🇷Build<strong> your UI Librarie
 </strong>"
 subtitle: "Components are great"
 section: css
