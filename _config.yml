@@ -5,4 +5,5 @@ kramdown:
   input: GFM
 exclude: ['images/original']
 permalink: :title.html
-baseurl: '/'
+url: https://andryjohn.github.io/codedot-workshop/
+route: '/'
