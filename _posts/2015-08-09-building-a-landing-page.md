@@ -27,7 +27,7 @@ Then, launch the video 🎬 and follow Boris’ lead. You can open a new tab wit
 
 HTML is a language that defines the structure and content of your web page. Every HTML page has the same skeleton:
 
-```html
+{% highlight html %}
 
 <html>
   <head>
@@ -44,8 +44,7 @@ HTML is a language that defines the structure and content of your web page. Ever
     <a href="#">Start Learning Now</a>
   </body>
 </html>
-
-```
+{%endhighlight html%}
 HTML main syntax
 HTML has a ton of different tags. Each tag has its own purpose, for example:
 
