@@ -1,8 +1,7 @@
-name: CodeDot | HTML | CSS | SASS
-description: Great tutorial to learn HTML and CSS and become powerfull
+name: MarkSheet
+description: A free tutorial to learn HTML and CSS
 markdown: kramdown
 kramdown:
   input: GFM
 exclude: ['images/original']
 permalink: :title.html
-url: https://andryjohn.github.io/codedot-workshop
