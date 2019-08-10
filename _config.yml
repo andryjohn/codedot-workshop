@@ -5,4 +5,4 @@ kramdown:
   input: GFM
 exclude: ['images/original']
 permalink: :title.html
-url: http://learn-codedot.tk/
+url: https://learn-codedot.tk/
