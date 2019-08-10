@@ -1,9 +1,9 @@
-name: MarkSheet
-description: A free tutorial to learn HTML and CSS
+name: Codedot
+description: Learn HTML and CSS
 markdown: kramdown
 kramdown:
   input: GFM
 exclude: ['images/original']
 permalink: :title.html
-url: https://andryjohn.github.io/codedot-workshop/
+url: http://learn-codedot.tk/
 route: '/'
