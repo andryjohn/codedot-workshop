@@ -46,7 +46,8 @@ Combining web components
 Organize your CSS with component files
 From this point, you will start organizing your CSS code with one CSS file for each component. Buttons are standard components, and so are avatars, cards, lists, navbar, tabs, forms, etc.. All these guys deserve their own separate CSS file. It means your project architecture will look like:
 
-```
+{% highlight quote %}
+
 .
 ├── css
 │   ├── components
@@ -55,25 +56,29 @@ From this point, you will start organizing your CSS code with one CSS file for e
 │   │   └── button.css
 │   └── style.css
 └── index.html
+{% endhighlight quote %}
 
-```
 Then in style.css:
 
-```css
+{% highlight css %}
+
 /* Importing all components file */
 @import url("components/avatar.css");
 @import url("components/banner.css");
 @import url("components/button.css");
 
-```
+{% endhighlight css %}
+
 
 Then you just need one unique link to style.css in your HTML file:
 
-```html
+{% highlight html %}
+
 <head>
   <link rel="stylesheet" href="css/style.css">
 </head>
-```
+{% endhighlight html %}
+
 ## Useful CSS techniques for building components
 
 **Gradient filter**
@@ -82,7 +87,8 @@ When you have a card (or a banner) with a background image and some text content
 
 For example, consider this dark filter:
 
-```html
+{% highlight html %}
+
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%),
   url('/path/to/background.jpg');
@@ -90,7 +96,8 @@ For example, consider this dark filter:
   background-size: cover;
   color: white;
 }
-```
+{% endhighlight html %}
+
 Applying this gradient makes the header and tagline or Le Wagon so much more readable:
 
 
