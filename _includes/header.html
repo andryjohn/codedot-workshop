@@ -1,16 +1,15 @@
 <header class="page-header">
   <div class="container">
-    <p class="page-header-icons">
-      <a href="https://twitter.com/RajohnsonAndry" target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-      <a href="https://github.com/andryjohn" target="_blank">
-        <i class="fa fa-github"></i>
-      </a>
-    </p>
-
-    {% unless page.layout == 'index' %}
+    <a href="https://learn-codedot.tk/">
+      <img src="/images/logo.png" alt="" id= "logo">
+    </a>
+{% unless page.layout == 'index' %}
       {% include share.html %}
     {% endunless %}
   </div>
 </header>
+<style>
+  #logo {
+    height: 5em;
+  }
+</style>
