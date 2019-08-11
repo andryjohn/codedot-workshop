@@ -10,7 +10,7 @@ section: css
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/-9ZheXYOMeM' frameborder='0' allowfullscreen></iframe></div>
 
-# The 2-hour landing page
+<h1>The 2-hour landing page</h1>
 
 Time to discover HTML and CSS by coding our very first landing page!
 
@@ -19,13 +19,11 @@ To proceed, make sure you have the following programs installed on your laptop:
 * [Sublime Text](https://www.sublimetext.com/), the text editor we use;
 * [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjw1rnqBRAAEiwAr29II_mLeR16x2Wm6W9bxGToC3YtQrOmfOBSZ7rtAiNy_YmLdHsbpZ2t4hoCpuYQAvD_BwE&gclsrc=aw.ds) - the best browser for developers.
 
-Then, launch the video 🎬 and follow Boris’ lead. You can open a new tab with the challenge’s instructions. You can also navigate through the slides.
-
 ## Main takeaways
 
-##HTML basics
+## HTML basics
 
-HTML is a language that defines the structure and content of your web page. Every HTML page has the same skeleton:
+**HTML** is a language that defines the structure and content of your web page. Every HTML page has the same skeleton:
 
 {% highlight html %}
 
@@ -45,6 +43,7 @@ HTML is a language that defines the structure and content of your web page. Ever
   </body>
 </html>
 {%endhighlight html%}
+
 HTML main syntax
 HTML has a ton of different tags. Each tag has its own purpose, for example:
 
@@ -63,19 +62,21 @@ The syntax of an HTML element is always the same:
 * all content is wrapped between an opening <tag> and a closing </tag>;
 * the opening tag is mostly plain, but it can also specify attributes with values, such as the href attribute for a link, where the hyperlink is written inside the tag:
 
-```html
+{% highlight html %}
+
 
 <a href="http://www.lewagon.com">Le Wagon</a>
 Some elements - such as <img> - don’t have closing tags. They just have attributes inside:
 
-```
 
-```html
+
+
 
 <!-- images don't have closing tags -->
 <img src="logo.png" alt="Le Wagon">
 
-```
+{% endhighlight html %}
+
 We call these self-closing tags.
 
 ## HTML indentation
@@ -90,7 +91,8 @@ Indenting your code is ⚠️ **very important** ⚠️ when you start coding:
 
 >To properly indent your HTML code, each opening `<tag>` and associated closing `</tag>` must be vertically aligned. Any nested content should then be indented 1 tab right (= 2 spaces). Here is an example of good indentation:
 
-```html
+{% highlight html %}
+
 
 <div class="banner">
   <div class="banner-content">
@@ -108,8 +110,8 @@ Indenting your code is ⚠️ **very important** ⚠️ when you start coding:
     </p>
   </div>
 </div>
+{% endhighlight html %}
 
-```
 Properly indented HTML code should draw waves in your file 🌊🌊🌊 (or should look like a flying V of ducks if you prefer this metaphor 🦆🦆🦆).
 
 Design in CSS
@@ -117,66 +119,84 @@ CSS is the language that gives style 🎨 to your HTML elements.
 Without CSS, web pages all have the same, boring and ugly look.
 CSS selectors enable you to grab one or more elements, on which you can define style rules:
 
-```html
+{% highlight html %}
+
 p {
   color: red;
 }
-```
+{% endhighlight html %}
+
 This will turn the text colour of all your `<p>` elements red!
 
 ## Classes and IDs
 
 **Classes** allow us to give multiple HTML elements the same name in order to change the css of all of them at the same time. IDs are only used when you want to manipulate **one single element**. For example:
-```html
+
+{% highlight html %}
+
 
 <a href="..." class="link-blue">Google</a>
 <a href="..." id="link-wagon" >Le Wagon</a>
 <a href="..." class="link-blue">Facebook</a>
 
-```
+{% endhighlight html %}
+
 To design our classes and IDs, we need to use selectors. class selectors start with a . and id selectors start with a `#`.
 
 To design the blue links we must use a class selector:
-```css
+
+{% highlight css %}
+
 .link-blue {
   color: blue;
 }
-```
+{% endhighlight css %}
+
 To design Le Wagon’s link, this time we use an id selector:
 
-```css
+{% highlight css %}
+
 #link-wagon {
   color: white;
   background-color: red;
 }
-```
+{% endhighlight css %}
+
 Specificity of CSS selectors
 CSS selectors have priority levels that define which style rule should be applied on an element. IDs are more specific than classes, which are more specific than tags. Any clashing style command will follow this order of priority. For instance consider the following image:
-```css
+
+{% highlight css %}
+
 <img src="..." class="img-big">
 
-```
+{% endhighlight css %}
+
 And the following CSS:
 
-```css
+{% highlight css %}
+
 img {
   width: 20px;
 }
 .img-big {
   width: 100px;
 }
-```
+{% endhighlight css %}
+
 👉 The image will have a width of 100 pixels.
 
 Now if the HTML is:
 
-```html
+{% highlight html %}
+
 <img src="..." class="img-big" id="logo">Google</a>
 
-```
+{% endhighlight html %}
+
 And the CSS is :
 
-```css
+{% highlight css %}
+
 img {
   width: 20px;
 }
@@ -187,19 +207,22 @@ img {
   witdh: 50px;
 }
 
-```
+{% endhighlight css %}
+
 👉 The image will have a width of 50 pixels.
 
 ##Descendant selectors
 
 You can also be more specific by combining selectors. For instance, to select all the links inside the element with the class="banner" you can use a descendant selector:
 
-```css
+{% highlight css %}
+
 
 .banner a {
   color: white;
 }
-```
+{% endhighlight css %}
+
 ## Exercise
 
 * Your turn! It’s time to code your own landing page based on what you’ve learnt.
