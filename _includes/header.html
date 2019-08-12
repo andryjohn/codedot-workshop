@@ -1,18 +1,24 @@
 <header class="page-header">
+   <section class="heading" style="margin-top: .5em">
+   <h1><q>Learn</q> is an online plateform By <strong>Codedot.tk</strong> </h1>
+    </section>
+
   <div class="container">
     <a href="https://learn-codedot.tk/">
       <img src="/images/logo.png" alt="" id= "logo">
     </a>
+
 {% unless page.layout == 'index' %}
       {% include share.html %}
     {% endunless %}
   </div>
-  <section class="heading">
-    <h1><q>"Learn"</q> is an online plateform By <strong>Codedot.tk</strong> </h1>
-  </section>
+
 </header>
 <style>
   #logo {
     height: 5em;
+    position: relative;
+    bottom: 3em;
+    left: 2em;
   }
 </style>
