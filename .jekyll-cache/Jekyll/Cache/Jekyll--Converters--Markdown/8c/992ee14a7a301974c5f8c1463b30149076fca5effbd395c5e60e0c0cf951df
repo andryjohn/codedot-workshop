@@ -1,0 +1,8 @@
+I"�<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/1TgTA4o_AM8?autoplay=1&amp;cc_load_policy=1&amp;controls=0&amp;disablekb=1&amp;enablejsapi=1&amp;loop=1&amp;color=white" frameborder="0" allowfullscreen=""></iframe></div>
+<p>You’re certainly already acquainted with document editors, like <strong>Microsoft <strong>Word</strong></strong>, with which you can <strong>structure</strong> your document with titles, paragraph, lists, tables, images, <strong>bold</strong> and <em>italic</em> text.</p>
+
+<p><strong>HTML</strong> provides roughly the same elements of formatting. The key difference is that formatting text in Microsoft Word is <em>visual</em>, whereas HTML code is purely <strong>semantic</strong>: you provide <em>meaning</em> to your text.</p>
+
+<p>The same way you use ♫ <strong>notes</strong> ♬ to write <strong>music</strong>, you use <strong>HTML</strong> to write <strong>webpages</strong>.</p>
+:ET

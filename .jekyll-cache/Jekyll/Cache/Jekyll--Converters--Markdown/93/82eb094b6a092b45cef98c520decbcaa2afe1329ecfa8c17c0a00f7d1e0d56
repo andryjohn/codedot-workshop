@@ -1,0 +1,152 @@
+I"h<p>You’re currently using a <em>Web browser</em> to read this <em>Webpage</em> written in <em>HTML</em>.</p>
+
+<h3 id="html-documents">HTML documents</h3>
+
+<p><strong>Webpages</strong> are <strong>HTML documents</strong>, like other files on your computer. They are just text files with a <code class="highlighter-rouge">.html</code> extension.</p>
+
+<p>On your computer, you probably have different <strong>types</strong> of files:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">.jpg</code> for images</li>
+  <li><code class="highlighter-rouge">.mp3</code> for music</li>
+  <li><code class="highlighter-rouge">.avi</code> for videos</li>
+  <li><code class="highlighter-rouge">.doc</code> for Word documents</li>
+  <li><code class="highlighter-rouge">.xls</code> for Excel spreadsheets</li>
+</ul>
+
+<p>Each of these <em>types</em> of files can be opened by a specific <strong>program</strong>. Some of these programs can only <em>open</em> these files, while others can both <em>open</em> and <em>create</em> files.</p>
+
+<p class="info">By default, <strong>file extensions</strong> are hidden. In this tutorial, we’ll need to be able to edit these extensions. So follow these instructions to display file extensions:
+<strong>Windows</strong>: <a href="https://windows.microsoft.com/en-us/windows/show-hide-file-name-extensions">Show or hide file name extensions</a>
+<strong>Mac</strong>: <a href="https://support.apple.com/kb/PH10845?locale=en_US">Show and hide filename extensions</a></p>
+
+<p>For example:</p>
+
+<ul>
+  <li>iTunes can <strong>open</strong> <code class="highlighter-rouge">.mp3</code> files but can not create them.</li>
+  <li>Microsoft Word can however both <strong>open</strong> and <strong>create</strong> <code class="highlighter-rouge">.doc</code> files.</li>
+</ul>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>Program</th>
+      <th>Type</th>
+      <th>
+        Can <em>open</em> these files
+      </th>
+      <th>
+        Can also <em>create</em> these files?
+      </th>
+    </tr>
+    <tr>
+      <td>Microsoft Word</td>
+      <td>Word editor</td>
+      <td>
+        <code>.doc</code>
+        <code>.docx</code>
+      </td>
+      <td class="yes"><span>Yes</span></td>
+    </tr>
+    <tr>
+      <td>Paint</td>
+      <td>Graphics</td>
+      <td>
+        <code>.jpg</code>
+        <code>.gif</code>
+        <code>.bmp</code>
+      </td>
+      <td class="yes"><span>Yes</span></td>
+    </tr>
+    <tr>
+      <td>VLC</td>
+      <td>Video player</td>
+      <td>
+        <code>.avi</code>
+        <code>.mpg</code>
+      </td>
+      <td class="no">No</td>
+    </tr>
+    <tr>
+      <td>iTunes</td>
+      <td>Music player</td>
+      <td>
+        <code>.mp3</code>
+        <code>.wav</code>
+        <code>.aiff</code>
+      </td>
+      <td class="no">No</td>
+    </tr>
+    <tr>
+      <td>Firefox</td>
+      <td>Web browser</td>
+      <td>
+        <code>.html</code>
+      </td>
+      <td class="no">No</td>
+    </tr>
+    <tr>
+      <td>Notepad++</td>
+      <td>Text editor</td>
+      <td>
+        <code>.text</code>
+        <code>.html</code>
+      </td>
+      <td class="yes"><span>Yes</span></td>
+    </tr>
+  </table>
+</div>
+
+<p>The program used to <strong>open</strong> HTML documents is a <strong>browser</strong>, like Firefox or Google Chrome.
+The program used to <strong>create</strong> HTML documents is a <strong>text editor</strong>, like Notepad++ or Sublime Text.</p>
+
+<h3 id="html-source-code">HTML source code</h3>
+
+<p>HTML code looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span></code></pre></figure>
+
+<p>This code is written with a <strong>text editor</strong>. You can see the tags <code class="highlighter-rouge">&lt;p&gt;</code> and <code class="highlighter-rouge">&lt;/p&gt;</code> that stand for <strong>paragraph</strong>.</p>
+
+<p>When opened by a <strong>browser</strong>, these tags are <strong>not displayed</strong> but rather <strong>interpreted</strong> by the browser:</p>
+
+<div class="result">
+  <p>Hello World</p>
+</div>
+
+<p>The browser sees the <code class="highlighter-rouge">&lt;p&gt;</code> and <code class="highlighter-rouge">&lt;/p&gt;</code> tags and understands that <code class="highlighter-rouge">Hello World</code> is a <strong>paragraph</strong>.</p>
+
+<p>Remember that an HTML document can be opened in <strong>2 ways</strong>:</p>
+
+<ul>
+  <li>by a <strong>text editor</strong> who <em>sees</em> the source code</li>
+  <li>by a <strong>browser</strong> who <em>interprets</em> the source code</li>
+</ul>
+
+<h3 id="list-of-web-browsers">List of Web browsers</h3>
+
+<p>As the Web has become the primary use of the internet, every computer and smartphone comes with a default browser installed.</p>
+
+<p>The most popular ones are:</p>
+
+<ul class="software">
+  <li><a href="https://www.google.com/chrome/"><img src="/images/web-browsers/chrome.png" alt="Chrome" /></a> <strong>Chrome</strong></li>
+  <li><a href="https://www.mozilla.org/firefox/"><img src="/images/web-browsers/firefox.png" alt="Firefox" /></a> <strong>Firefox</strong></li>
+  <li><a href="https://www.microsoft.com/download/internet-explorer.aspx"><img src="/images/web-browsers/internet-explorer.png" alt="Internet Explorer" /></a> <strong>Internet Explorer</strong></li>
+  <li><a href="https://www.opera.com/"><img src="/images/web-browsers/opera.png" alt="Opera" /></a> <strong>Opera</strong></li>
+  <li><a href="https://www.apple.com/safari/"><img src="/images/web-browsers/safari.png" alt="Safari" /></a> <strong>Safari</strong></li>
+</ul>
+
+<h3 id="list-of-text-editors">List of text editors</h3>
+
+<p>The most popular ones are:</p>
+
+<ul class="software">
+  <li><a href="https://notepad-plus-plus.org/"><img src="/images/text-editors/notepad-plus-plus.png" alt="Notepad++" /></a> <strong>Notepad++</strong></li>
+  <li><a href="https://www.sublimetext.com/"><img src="/images/text-editors/sublime-text.png" alt="Sublime Text" /></a> <strong>Sublime Text</strong></li>
+</ul>
+
+<p>You will need to install one to <strong>write</strong> HTML and CSS.</p>
+
+<p>While the rest of this tutorial doesn’t require to write any code, it’s <strong>recommended</strong> to try out the examples yourself.</p>
+:ET

@@ -1,0 +1,113 @@
+I"�<h3 id="web">Web</h3>
+
+<p>We have seen how computers connected on the Internet communicate in different languages called <strong>protocols</strong>, to exchange emails, files, chat messages…</p>
+
+<p>One of these protocols is called <strong><abbr title="HyperText Transfer Protocol">HTTP</abbr></strong>. It’s the protocol with which computers share <strong>Webpages</strong> between each other, like the one you’re currently reading.</p>
+
+<p>The <strong>Web</strong> is the part of the Internet where Webpages are shared. You can tell you’re browsing the Web if the URL starts with <code class="highlighter-rouge">https://</code>.</p>
+
+<h3 id="webpage">Webpage</h3>
+
+<p>A Webpage is a <strong>document</strong> written in HTML that is shared across the <strong>Web</strong>.</p>
+
+<p>You open these documents with a <strong>Web browser</strong>.</p>
+
+<p>To access a Webpage you can either:</p>
+
+<ul>
+  <li>type its <strong>URL</strong>, like <code class="highlighter-rouge">https://learn-codedot.tk/web.html</code></li>
+  <li>click on a <strong>link</strong>, like <a href="https://learn-codedot.tk/internet.html">this one</a></li>
+</ul>
+
+<p>Because remembering URLs is cumbersome, the Web at its origin is based upon <strong>interlinked documents</strong> to make easy for users to <em>browse</em> the Web.</p>
+
+<h3 id="website">Website</h3>
+
+<p>A <strong>Website</strong> is simply a <em>collection</em> of Webpages located on a <strong>same domain</strong>.</p>
+
+<ul>
+  <li><strong>Web</strong> <code class="highlighter-rouge">https://</code>
+    <ul>
+      <li>Website <code class="highlighter-rouge">learn-codedot.tk</code>
+        <ul>
+          <li>Webpage <code class="highlighter-rouge">/introduction.html</code></li>
+          <li>Webpage <code class="highlighter-rouge">/internet.html</code></li>
+          <li>Webpage <code class="highlighter-rouge">/web.html</code></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="opening-a-webpage-in-your-browser">Opening a Webpage in your browser</h3>
+
+<p>By navigating to <a href="https://learn-codedot.tk/web.html">https://learn-codedot.tk/web.html</a>, you’re asking a computer on the Internet to get the <code class="highlighter-rouge">web.html</code> document.</p>
+
+<p>In that case, your computer is the <strong>client</strong>. You’re asking the MarkSheet <strong>server</strong> (on which the website is hosted) to get the file called <code class="highlighter-rouge">web.html</code>.</p>
+
+<div class="table">
+  <table>
+    <tr>
+      <th>
+        <em>Client</em>
+        <strong>Your computer</strong>
+      </th>
+      <td>
+        <q>Hi MarkSheet computer! I'd like the <code>web.html</code> file please</q>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <em>Server</em>
+        <strong>The MarkSheet computer</strong>
+      </th>
+      <td>
+        <q>Let me check if it's there... </q>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <em>Client</em>
+        <strong>Your computer</strong>
+      </th>
+      <td>
+        <q>Ok I'll wait</q>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <em>Server</em>
+        <strong>The MarkSheet computer</strong>
+      </th>
+      <td>
+        <q>Oh, here it is! Let me send that to you.</q>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        <em>Client</em>
+        <strong>Your computer</strong>
+      </th>
+      <td>
+        <q>Got it. Thanks!</q>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p>Your browser is then able to display <code class="highlighter-rouge">web.html</code>.</p>
+
+<p>The file is <strong>not saved</strong> on your computer though: it is only displayed temporarily while you navigate it. If you go to <a href="https://learn-codedot/web.html">https://learn-codedot/web.html</a> later, it will ask the MarkSheet computer <em>again</em> for that same file, if it still exists. That way, it ensures you always get the <em>latest</em> version of the file.</p>
+
+<dl>
+  <dt>Web</dt>
+  <dd>The part of the Internet that uses the <strong><abbr title="HyperText Transfer Protocol">HTTP</abbr></strong> protocol.</dd>
+  <dt>Webpage</dt>
+  <dd>A document written in <strong>HTML</strong>.</dd>
+  <dt>Website</dt>
+  <dd>A collection of Webpages on the same <strong>domain</strong>.</dd>
+  <dt>Browser</dt>
+  <dd>A program that can <strong>open</strong> Webpages in order to display them.</dd>
+</dl>
+
+:ET

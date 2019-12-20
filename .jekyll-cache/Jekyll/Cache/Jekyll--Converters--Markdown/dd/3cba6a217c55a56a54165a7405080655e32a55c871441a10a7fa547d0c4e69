@@ -1,0 +1,8 @@
+I"&<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe id="ytplayer" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/Ub3FKU21ubk?autoplay=1&amp;cc_load_policy=1&amp;controls=0&amp;disablekb=1&amp;enablejsapi=1&amp;loop=1&amp;modestbranding=1&amp;playsinline=1&amp;start=10&amp;color=white&amp;iv_load_policy=3" frameborder="0" allowfullscreen=""></iframe></div>
+<p>While HTML is about defining the <em>content</em> of a webpage, CSS is about <strong>styling</strong> a webpage. It means setting colors, fonts, dimensions, margins, positions, of a webpage’s <strong>elements</strong>.</p>
+
+<p>HTML is inert. CSS is fluid.</p>
+
+<p>CSS brings a webpage to life, by applying a coat of paint on its static content, and elevates its purpose through color, space, emphasis and motion.</p>
+:ET

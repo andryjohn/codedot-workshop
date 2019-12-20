@@ -1,0 +1,177 @@
+I"�<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/GNtohfhj_A4" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h1 id="web-components">Web Components</h1>
+
+<p>Now that you know the basics of HTML &amp; CSS, let’s go a bit deeper into web design and CSS techniques.</p>
+
+<ul>
+  <li>
+    <p>Get used to thinking in terms of web components; UI elements you can combine to build your web pages.</p>
+  </li>
+  <li>
+    <p>Learn how to code your own CSS library of them! Having a cool library of components is the most powerful secret of frontend developers.</p>
+  </li>
+</ul>
+
+<h1 id="main-takeaways">Main takeaways</h1>
+
+<h1 id="whats-a-component">What’s a component?</h1>
+
+<p>A component is a standard UI element that has a precise purpose:</p>
+
+<ul>
+  <li>
+    <p>An <strong>avatar</strong> is generally used for a profile picture</p>
+  </li>
+  <li>
+    <p>A <strong>dropdown</strong> list enables to hide/show a secondary navigation</p>
+  </li>
+  <li>
+    <p><strong>Tabs</strong> are here to split the page content into different clickable sections</p>
+  </li>
+  <li>
+    <p>A <strong>form</strong> is here to capture user inputs</p>
+  </li>
+  <li>
+    <p>A <strong>card</strong> displays each result in a nice way within a collection <em>(collection of Airbnb apartments, eBay items, etc…)</em></p>
+  </li>
+</ul>
+
+<p><img src="/images/components.png" alt="component" /></p>
+
+<p>##Common web components</p>
+
+<p>Combine components to build pages
+Once you know all the common web components, building a web page becomes just like playing Lego. All you have to do is combine the right components. Here is an example:</p>
+
+<p>Combining web components</p>
+
+<p>Organize your CSS with component files
+From this point, you will start organizing your CSS code with one CSS file for each component. Buttons are standard components, and so are avatars, cards, lists, navbar, tabs, forms, etc.. All these guys deserve their own separate CSS file. It means your project architecture will look like:</p>
+
+<figure class="highlight"><pre><code class="language-quote" data-lang="quote">.
+├── css
+│   ├── components
+│   │   ├── avatar.css
+│   │   ├── banner.css
+│   │   └── button.css
+│   └── style.css
+└── index.html</code></pre></figure>
+
+<p>Then in style.css:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="c">/* Importing all components file */</span>
+<span class="k">@import</span> <span class="sx">url("components/avatar.css")</span><span class="p">;</span>
+<span class="k">@import</span> <span class="sx">url("components/banner.css")</span><span class="p">;</span>
+<span class="k">@import</span> <span class="sx">url("components/button.css")</span><span class="p">;</span></code></pre></figure>
+
+<p>Then you just need one unique link to style.css in your HTML file:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/style.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span></code></pre></figure>
+
+<h2 id="useful-css-techniques-for-building-components">Useful CSS techniques for building components</h2>
+
+<p><strong>Gradient filter</strong></p>
+
+<p>When you have a card (or a banner) with a background image and some text content, it can be hard to read the text on top of the pictures. To remedy this, you need to add a dark, semi-transparent filter to make the content more readable.</p>
+
+<p>For example, consider this dark filter:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%),
+  url('/path/to/background.jpg');
+
+  background-size: cover;
+  color: white;
+}</code></pre></figure>
+
+<p>Applying this gradient makes the header and tagline or Le Wagon so much more readable:</p>
+
+<p>Banner with a dark filter</p>
+
+<p><img src="/images/gradient-example.png" alt="component" /></p>
+
+<h2 id="relative--absolute">Relative / Absolute</h2>
+
+<p>The <strong>relative/absolute</strong> CSS pattern is important when you need to position stuff in a specific place inside a component (e.g. a card).</p>
+
+<ul>
+  <li>
+    <p>Putting the card as <code class="highlighter-rouge">position: relative</code> is a way to pin it and be able to position the things inside it precisely.</p>
+  </li>
+  <li>
+    <p>Then you can make the inner elements <code class="highlighter-rouge">position: absolute</code> and place them wherever you want in the card thanks to the <code class="highlighter-rouge">top/bottom/left/right</code> properties.</p>
+  </li>
+</ul>
+
+<p><img src="/images/relative-absolute.png" alt="component" /></p>
+
+<footer>The relative/absolute CSS pattern</footer>
+
+<h2 id="flexbox">Flexbox</h2>
+
+<p>Flexboxes are awesome. It’s a layout mode intended to accommodate different screen sizes and different display devices. To turn a div into a flexbox is super easy: just add display: flex on your div. Then:</p>
+
+<ul>
+  <li>
+    <p>That div is the flexbox</p>
+  </li>
+  <li>
+    <p>All of its children elements are called flex items and can be distributed vertically and horizontally within the flexbox.</p>
+  </li>
+</ul>
+
+<p><img src="/images/vocabulary.png" alt="component" /></p>
+
+<h2 id="main-flexbox-properties">Main flexbox properties</h2>
+
+<p>Here are the important CSS properties <strong>on the flexbox</strong> (not on the item):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">justify-content</code> distributes flex items horizontally (either with space-around the items or space-between the items).</li>
+  <li>
+    <p><code class="highlighter-rouge">align-items: center</code> allows use to vertically align the items (very useful).
+You can also make a flex item grow and take all available space:</p>
+  </li>
+  <li><code class="highlighter-rouge">flex-grow: 1</code> will make a flex item grow and push its neighbours on the left and on the right 💪💪💪.</li>
+</ul>
+
+<h1 id="exercises">Exercises</h1>
+
+<ul>
+  <li>
+    <p>Build <a href="https://codedot.tk/UIkit">your own library</a></p>
+  </li>
+  <li>
+    <p>Design the Facebook Like button</p>
+  </li>
+  <li>
+    <p>Build an <a href="https://www.epicurious.com/search/chocolate%20cake">Epicurious’ card</a></p>
+  </li>
+  <li>
+    <p>Use flexboxes to design your own breaking news feed</p>
+  </li>
+</ul>
+
+<h1 id="resources">Resources</h1>
+
+<ul>
+  <li>
+    <p>Bootstrap web components</p>
+  </li>
+  <li>
+    <p>UX components on codepen.io</p>
+  </li>
+  <li>
+    <p>Flexbox guide</p>
+  </li>
+  <li>
+    <p>Flexbox Froggy game</p>
+  </li>
+</ul>
+
+<p>Happy Designing 🎨 🎨 🎨</p>
+:ET

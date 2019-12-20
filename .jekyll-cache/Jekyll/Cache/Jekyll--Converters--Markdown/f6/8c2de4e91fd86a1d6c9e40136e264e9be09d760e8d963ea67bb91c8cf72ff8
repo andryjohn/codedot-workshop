@@ -1,0 +1,215 @@
+I"I2<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class="embed-container"><iframe src="https://www.youtube.com/embed/-9ZheXYOMeM" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h1>The 2-hour landing page</h1>
+
+<p>Time to discover HTML and CSS by coding our very first landing page!</p>
+
+<p>To proceed, make sure you have the following programs installed on your laptop:</p>
+
+<ul>
+  <li><a href="https://www.sublimetext.com/">Sublime Text</a>, the text editor we use;</li>
+  <li><a href="https://www.google.com/chrome/?brand=CHBD&amp;gclid=CjwKCAjw1rnqBRAAEiwAr29II_mLeR16x2Wm6W9bxGToC3YtQrOmfOBSZ7rtAiNy_YmLdHsbpZ2t4hoCpuYQAvD_BwE&amp;gclsrc=aw.ds">Google Chrome</a> - the best browser for developers.</li>
+</ul>
+
+<h2 id="main-takeaways">Main takeaways</h2>
+
+<h2 id="html-basics">HTML basics</h2>
+
+<p><strong>HTML</strong> is a language that defines the structure and content of your web page. Every HTML page has the same skeleton:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="c">&lt;!-- page's intelligence (metadata) --&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>My playground landing<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+
+  <span class="nt">&lt;body&gt;</span>
+    <span class="c">&lt;!-- page's content --&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>My First Page<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is the important line everyone reads..<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Start Learning Now<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+<p>HTML main syntax
+HTML has a ton of different tags. Each tag has its own purpose, for example:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">&lt;h1&gt;</code>, <code class="highlighter-rouge">&lt;h2&gt;</code>, <code class="highlighter-rouge">&lt;h3&gt;</code>, <code class="highlighter-rouge">&lt;h4&gt;</code> and <code class="highlighter-rouge">&lt;h5&gt;</code> are used for <strong>headers and subheaders</strong>(titles)</li>
+  <li><code class="highlighter-rouge">&lt;p&gt;</code> for paragraphs of text</li>
+  <li><code class="highlighter-rouge">&lt;a&gt;</code> for links</li>
+  <li><code class="highlighter-rouge">&lt;ul&gt;</code> for unordered (i.e. not-numbered) lists and &lt;li&gt; for the list items inside that list</li>
+  <li><code class="highlighter-rouge">&lt;div&gt;</code> used to wrap content into divisions of your web page, allowing you to manipulate groups of elements
+T
+    <blockquote>
+      <p>There are loads more tags - you’ll learn them soon!</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>The syntax of an HTML element is always the same:</p>
+
+<ul>
+  <li>all content is wrapped between an opening <tag> and a closing </tag>;</li>
+  <li>the opening tag is mostly plain, but it can also specify attributes with values, such as the href attribute for a link, where the hyperlink is written inside the tag:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.lewagon.com"</span><span class="nt">&gt;</span>Le Wagon<span class="nt">&lt;/a&gt;</span>
+Some elements - such as <span class="nt">&lt;img&gt;</span> - don’t have closing tags. They just have attributes inside:
+
+
+
+
+
+<span class="c">&lt;!-- images don't have closing tags --&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">alt=</span><span class="s">"Le Wagon"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>We call these self-closing tags.</p>
+
+<h2 id="html-indentation">HTML indentation</h2>
+
+<p>Indenting your code is ⚠️ <strong>very important</strong> ⚠️ when you start coding:</p>
+
+<ul>
+  <li>
+    <p>Your code needs to be readable by the future you 😣 or by your teammates 😖😫😩.</p>
+  </li>
+  <li>
+    <p>Not only is it easier to read and maintain, but if you ever get syntax errors you’ll be able to debug it in the blink of an eye!</p>
+  </li>
+  <li>
+    <p>It’s crucial to form good habits from the very beginning. Indenting will soon become as natural as breathing 🌬.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>To properly indent your HTML code, each opening <code class="highlighter-rouge">&lt;tag&gt;</code> and associated closing <code class="highlighter-rouge">&lt;/tag&gt;</code> must be vertically aligned. Any nested content should then be indented 1 tab right (= 2 spaces). Here is an example of good indentation:</p>
+</blockquote>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello World!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      At the end of Le Wagon bootcamp I'll know:
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Ruby<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>SQL<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>HTML<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>CSS<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>JavaScript<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>Rails<span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p>Properly indented HTML code should draw waves in your file 🌊🌊🌊 (or should look like a flying V of ducks if you prefer this metaphor 🦆🦆🦆).</p>
+
+<p>Design in CSS
+CSS is the language that gives style 🎨 to your HTML elements.
+Without CSS, web pages all have the same, boring and ugly look.
+CSS selectors enable you to grab one or more elements, on which you can define style rules:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">p {
+  color: red;
+}</code></pre></figure>
+
+<p>This will turn the text colour of all your <code class="highlighter-rouge">&lt;p&gt;</code> elements red!</p>
+
+<h2 id="classes-and-ids">Classes and IDs</h2>
+
+<p><strong>Classes</strong> allow us to give multiple HTML elements the same name in order to change the css of all of them at the same time. IDs are only used when you want to manipulate <strong>one single element</strong>. For example:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"link-blue"</span><span class="nt">&gt;</span>Google<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span> <span class="na">id=</span><span class="s">"link-wagon"</span> <span class="nt">&gt;</span>Le Wagon<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"link-blue"</span><span class="nt">&gt;</span>Facebook<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p>To design our classes and IDs, we need to use selectors. class selectors start with a . and id selectors start with a <code class="highlighter-rouge">#</code>.</p>
+
+<p>To design the blue links we must use a class selector:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.link-blue</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>To design Le Wagon’s link, this time we use an id selector:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nf">#link-wagon</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Specificity of CSS selectors
+CSS selectors have priority levels that define which style rule should be applied on an element. IDs are more specific than classes, which are more specific than tags. Any clashing style command will follow this order of priority. For instance consider the following image:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">img</span> <span class="nt">src</span><span class="o">=</span><span class="s1">"..."</span> <span class="nt">class</span><span class="o">=</span><span class="s1">"img-big"</span><span class="o">&gt;</span></code></pre></figure>
+
+<p>And the following CSS:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.img-big</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>👉 The image will have a width of 100 pixels.</p>
+
+<p>Now if the HTML is:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"img-big"</span> <span class="na">id=</span><span class="s">"logo"</span><span class="nt">&gt;</span>Google<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p>And the CSS is :</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.img-big</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#logo</span> <span class="p">{</span>
+  <span class="py">witdh</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>👉 The image will have a width of 50 pixels.</p>
+
+<p>##Descendant selectors</p>
+
+<p>You can also be more specific by combining selectors. For instance, to select all the links inside the element with the class=”banner” you can use a descendant selector:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.banner</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="exercise">Exercise</h2>
+
+<ul>
+  <li>Your turn! It’s time to code your own landing page based on what you’ve learnt.</li>
+  <li>Share screenshots of your work on twitter 😎</li>
+</ul>
+
+<h2 id="resource">Resource</h2>
+
+<ul>
+  <li>
+    <p><strong>Icons:</strong> Icon store, The Noun Project, NucleoApp</p>
+  </li>
+  <li>
+    <p><strong>Fonts:</strong> Google Fonts</p>
+  </li>
+  <li>
+    <p><strong>Colors:</strong> Colorzilla, Coolors, Color Hunt</p>
+  </li>
+  <li>
+    <p><strong>Background images:</strong> Pexels</p>
+  </li>
+  <li>
+    <p><strong>CSS libraries:</strong> Bootstrap, Material Design</p>
+  </li>
+</ul>
+
+<p>Happy Hacking 🚀🚀🚀</p>
+:ET
